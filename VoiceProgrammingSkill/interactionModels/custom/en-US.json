@@ -1,0 +1,56 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "template kimi three",
+      "intents": [
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "help me"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "GoogleSheetsIntent",
+          "slots": [
+            {
+              "name": "sentence",
+              "type": "AMAZON.SearchQuery"
+            },
+            {
+              "name": "else",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "yes I want to add {else} ",
+            "can I add {sentence}",
+            "is there anything"
+          ]
+        }
+      ],
+      "types": [],
+      "modelConfiguration": {
+        "fallbackIntentSensitivity": {
+          "level": "LOW"
+        }
+      }
+    }
+  },
+  "version": "4"
+}
